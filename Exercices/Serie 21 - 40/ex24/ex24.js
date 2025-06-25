@@ -2,6 +2,7 @@ let userNameInput = document.getElementById('usernameInput')
 let passwordInput = document.getElementById('passwordInput')
 let letter = document.getElementById('letter')
 let number = document.getElementById('number')
+let length = document.getElementById('length')
 
 // Quand l'utilisateur clique sur le input du mot de passe, affiche la boîte de message
 passwordInput.onfocus = () => {document.getElementById('message').style.display = 'block'}
@@ -41,7 +42,8 @@ passwordInput.onkeyup = () => {
     letter.classList.remove('valid')
     letter.classList.add('invalid')
   }
- a
+ 
+
   
 
 }
