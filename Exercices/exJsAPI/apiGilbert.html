@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exo 21</title>
+  </head>
+  <body>
+    <h1>Exo avec Fetch</h1>
+    <h2>Récupérer données API</h2>
+    <button id="fetchData" onclick="goFetch()">Récupérer données</button>
+    <ul id="resultat"></ul>
+
+    <script>
+      function goFetch() {
+        let url = "https://jsonplaceholder.typicode.com/posts";
+        let resultat = document.getElementById("resultat");
+
+        try {
+          fetch(url)
+            .then((resp) => resp.json())
+            .then((xyz) => {
+              console.log(xyz);
+
+              let tabreduit = xyz.slice(0, 5);
+              console.log(tabreduit);
+
+              for (let i = 0; i < tabreduit.length; i++) {
+                let monli = document.createElement("li");
+                monli.innerHTML = tabreduit[i].title;
+
+                resultat.appendChild(monli);
+              }
+            });
+        } catch (e) {
+          console.error("Nous avons une erreur Houston: ", e);
+        }
+      }
+    </script>
+  </body>
+</html>

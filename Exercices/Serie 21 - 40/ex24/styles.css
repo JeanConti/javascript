@@ -1,0 +1,80 @@
+body {
+  margin: 10px 0px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+  .container {
+
+    background-color: #f1f1f1;
+    width: 50%;
+    
+    form {
+
+      margin-bottom: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: center;
+
+      label {
+
+        font-weight: bold;
+        margin-bottom: 5px;
+        
+      }
+
+      #username, #password{
+        margin: 10px;
+        width: 60%;
+        border-radius: 2px border none;        
+      }
+
+
+      submit {
+        margin: 10px;
+        width: 10%;
+      }
+    }
+  }
+
+  #message {
+    /* display: none; */
+    padding: 30px;
+    margin-top: 30px;
+    width: 50%;
+    background-color: #f1f1f1;
+
+    p {
+      padding: 4px 15px;
+      font-size: 18px;
+    }
+
+    .valid {
+      color: green;
+    }
+
+    .valid::before {
+      position: relative;
+      left: -35px;
+      content: "&#10004;";
+    }
+
+    .invalid {
+      color: red
+    }
+
+    .valid::before {
+      position: relative;
+      left: -35px;
+      content: "&#10004;";
+    }
+
+  }
+
+  
+}

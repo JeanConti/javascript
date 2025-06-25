@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+
+    <form action="">
+      <label for="username">Username</label>
+      <input type="text" id="username" required>
+  
+  
+      <label for="password">Password</label>
+      <input type="password" id="password" pattern="(?*\d) (?=.*  [a-z]) (?=.*[A-Z]) . {8,}" 
+      title="Debe contener al menos un número y una letra mayúscula y minúscula, y al menos 8 o más caracteres."  min="8" required> 
+
+      <input type="submit" class="btn btn-primary" value="Submit" onclick="validate()" >
+    </form>
+  </div>
+  <div id="message">
+    <h5>La contraseña debe contener lo siguiente: </h5>
+    
+    <p id="letter" class="invalid">Una letra en <b>minsculas</b></p>
+    <p id="letter" class="invalid">Una letra en <b>mayusculas</b></p>
+    <p id="number" class="invalid">Un <b>numero</b></p>
+    <p id="length" class="invalid">La contraseña deben de tener <b>8 caracteres</b> como minimo</p>
+    
+
+<script src="ex24.js"></script>
+</html>
