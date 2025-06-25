@@ -1,0 +1,5 @@
+let userName = document.getElementById('username')
+let password = document.getElementById('password')
+let minuculas = document.getElementById('minuculas')
+let mayusculas = document.getElementById('mayusculas')
+let number = document.getElementById('number')
