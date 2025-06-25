@@ -1,7 +1,6 @@
 let userNameInput = document.getElementById('usernameInput')
 let passwordInput = document.getElementById('passwordInput')
-let minuculas = document.getElementById('minuculas')
-let mayusculas = document.getElementById('mayusculas')
+let letter = document.getElementById('letter')
 let number = document.getElementById('number')
 
 // Quand l'utilisateur clique sur le input du mot de passe, affiche la boîte de message
@@ -12,6 +11,37 @@ passwordInput.onblur = () => { document.getElementById('message').style.display 
 
 // Quand l'utilisateur commence a écrire quelque chose dans l'input du mot de passe
 passwordInput.onkeyup = () => {
+
   // Validation des minuscules 
-  let minuculas = /[a-z]
+  let minuculas = /[a-z]/g
+  if (passwordInput.value.match(minuculas)) {
+    letter.classList.remove('invalid')
+    letter.classList.add('valid')
+  } else {
+    letter.classList.remove('valid')
+    letter.classList.add('invalid')
+  }
+
+   // Validation des mayusculea
+  let mayusculas = /[A-Z]/g
+  if (passwordInput.value.match(mayusculas)) {
+    letter.classList.remove('invalid')
+    letter.classList.add('valid')
+  } else {
+    letter.classList.remove('valid')
+    letter.classList.add('invalid')
+  }
+
+  // Validation des nombres
+  let numbers = /[0-9]/g
+  if (passwordInput.value.match(numbers)) {
+    letter.classList.remove('invalid')
+    letter.classList.add('valid')
+  } else {
+    letter.classList.remove('valid')
+    letter.classList.add('invalid')
+  }
+
+  
+
 }
