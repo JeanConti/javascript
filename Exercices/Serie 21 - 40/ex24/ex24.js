@@ -43,7 +43,6 @@ passwordInput.onkeyup = () => {
     letter.classList.add('invalid')
   }
  
-aa
-  
+bb  
 
 }
