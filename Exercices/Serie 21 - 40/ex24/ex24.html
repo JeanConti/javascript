@@ -12,11 +12,11 @@
 
     <form action="">
       <label for="username">Username</label>
-      <input type="text" id="username" required>
+      <input type="text" id="usernameInput" required>
   
   
       <label for="password">Password</label>
-      <input type="password" id="password" pattern="(?*\d) (?=.*  [a-z]) (?=.*[A-Z]) . {8,}" 
+      <input type="password" id="passwordInput" pattern="(?*\d) (?=.*  [a-z]) (?=.*[A-Z]) . {8,}" 
       title="Debe contener al menos un número y una letra mayúscula y minúscula, y al menos 8 o más caracteres."  min="8" required> 
 
       <input type="submit" class="btn btn-primary" value="Submit" onclick="validate()" >
