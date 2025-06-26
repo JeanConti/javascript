@@ -40,7 +40,7 @@ body {
         width: 198px;
       }
 
-      input[type="submit"]  {
+      button {
         margin: 10px;
         width: 98px;
       }
