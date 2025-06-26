@@ -23,3 +23,5 @@ function validate(password) {
 
   return 'La contraseña es valida'
 }
+
+const form = document.getElementById('passForm')
