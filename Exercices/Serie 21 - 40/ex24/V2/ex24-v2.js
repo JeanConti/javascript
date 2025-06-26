@@ -1,7 +1,7 @@
 function validatePassword(password) {
 
   // Variables
-  const minLength = /^.{8}$/ 
+  const minLength = /^.{8,}$/ 
   const haveUpperCase = /[A-Z]/
   const haveLowerCase = /[a-z]/
   const haveNumber = /\d/
@@ -11,13 +11,13 @@ function validatePassword(password) {
   if (!minLength.test(password)) {
     return 'The password do have min 8 caracteres'
   }
-  if (!haveUpperCase.test(password)) {
+  else if (!haveUpperCase.test(password)) {
     return 'The password do have min a uppercase'
   }
-  if (!haveLowerCase.test(password)) {
+  else if (!haveLowerCase.test(password)) {
     return 'The password do have min a lowercase'
   }
-  if (!haveNumber.test(password)) {
+  else if (!haveNumber.test(password)) {
     return 'The password do have min a number'
   }
   if (!haveSpecialC.test(password)) {

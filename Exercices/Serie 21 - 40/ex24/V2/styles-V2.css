@@ -48,7 +48,7 @@ body {
   }
 
   #message {
-    display: none;
+    /* display: none;
     padding: 30px;
     margin-top: 30px;
     width: 50%;
@@ -57,7 +57,7 @@ body {
     p {
       padding: 4px 15px;
       font-size: 18px;
-    }
+    } */
 
     .valid {
       color: green;
