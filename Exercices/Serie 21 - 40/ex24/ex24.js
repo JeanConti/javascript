@@ -43,5 +43,15 @@ passwordInput.onkeyup = () => {
     letter.classList.add('invalid')
   }
 
+  // Valider la longueur
+
+  if (length.value.length >= 8) {
+    letter.classList.remove('invalid')
+    letter.classList.add('valid')
+  } else {
+    letter.classList.remove('valid')
+    letter.classList.add('invalid')
+  }
+
 
 }
