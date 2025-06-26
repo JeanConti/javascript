@@ -35,7 +35,7 @@ body {
       }
 
 
-      button  {
+      input[type="submit"]  {
         margin: 10px;
         width: 98px;
       }
@@ -54,21 +54,21 @@ body {
       font-size: 18px;
     }
 
-    .message-valid {
+    .valid {
       color: green;
     }
 
-    .message-valid::before {
+    .valid::before {
       position: relative;
       left: -35px;
       content: "&#10004;";
     }
 
-    .message-error {
+    .invalid {
       color: red
     }
 
-    .message-error::before {
+    .valid::before {
       position: relative;
       left: -35px;
       content: "&#10004;";

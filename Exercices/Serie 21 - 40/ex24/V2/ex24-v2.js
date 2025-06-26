@@ -1,5 +1,8 @@
 function validate(password) {
   const minLength = /^.{8}$/
-  const maxLength = /^.{16}$/
+  const haveUpperCase = /[A-Z]/
+  const haveLowerCase = /[a-z]/
+  const haveLNumber = /\d/
+  const haveSpecialC = / [!@#$%^&*()":{}<>]/
   
 }
