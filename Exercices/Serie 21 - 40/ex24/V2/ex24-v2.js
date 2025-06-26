@@ -21,7 +21,7 @@ function validatePassword(password) {
     return 'The password do have min a number'
   }
   if (!haveSpecialC.test(password)) {
-    return 'The password do have min a special characters'
+    return 'The password do have min a special character'
   }
 
   return 'La contraseña es valida'
