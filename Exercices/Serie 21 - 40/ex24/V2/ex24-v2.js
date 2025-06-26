@@ -28,15 +28,15 @@ function validatePassword(password) {
 }
 
 
-const form = document.getElementById('passForm')
-const message = document.getElementById('message')
+const form = document.querySelector('#passForm')
+const message = document.querySelector('#message')
 
 // Event listener
 form.addEventListener('submit', (e) => {
 
   e.preventDefault()
 
-  const password = document.getElementById('password').value
+  const password = document.querySelector('#password').value
   const resulte = validatePassword(password)
 
   if (resulte === 'Valid password') {

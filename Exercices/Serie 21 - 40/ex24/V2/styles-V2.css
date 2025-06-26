@@ -53,11 +53,12 @@ body {
     margin-top: 30px;
     width: 50%;
     background-color: #f1f1f1;
+    */
 
     p {
       padding: 4px 15px;
       font-size: 18px;
-    } */
+    } 
 
     .valid {
       color: green;
