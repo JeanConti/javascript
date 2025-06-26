@@ -1,4 +1,4 @@
-function validate(password) {
+function validatePassword(password) {
   const minLength = /^.{8}$/
   const haveUpperCase = /[A-Z]/
   const haveLowerCase = /[a-z]/
@@ -6,19 +6,19 @@ function validate(password) {
   const haveSpecialC = / [!@#$%^&*()":{}<>]/
   
   if (!minLength.test(password)) {
-    return 'La contraseña debe tener al menos 8 caracteres'
+    return 'The password do have min 8 caracteres'
   }
   if (!haveUpperCase.test(password)) {
-    return 'La contraseña debe tener al menos una mayuscula'
+    return 'The password do have min a uppercase'
   }
   if (!haveLowerCase.test(password)) {
-    return 'La contraseña debe tener al menos una minuscula'
+    return 'The password do have min a lowercase'
   }
   if (!haveNumber.test(password)) {
-    return 'La contraseña debe tener al menos un numero'
+    return 'The password do have min a number'
   }
   if (!haveSpecialC.test(password)) {
-    return 'La contraseña debe tener al menos un carácter especial'
+    return 'The password do have min a special characters'
   }
 
   return 'La contraseña es valida'
@@ -27,6 +27,14 @@ function validate(password) {
 const form = document.getElementById('passForm')
 const message = document.getElementById('message')
 
-form.addEventListener('submit', () => {
+form.addEventListener('submit', (e) => {
+
   e.preventDefault()
+
+  const password = document.getElementById('password').value
+  const resulte = validatePassword(password)
+
+  if (resulte === 'Valid password') {
+
+  }
 })
