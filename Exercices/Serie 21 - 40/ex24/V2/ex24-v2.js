@@ -27,3 +27,6 @@ function validate(password) {
 const form = document.getElementById('passForm')
 const message = document.getElementById('message')
 
+form.addEventListener('submit', () => {
+  e.preventDefault()
+})
