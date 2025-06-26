@@ -11,16 +11,16 @@ function validatePassword(password) {
   if (!minLength.test(password)) {
     return 'The password do have min 8 caracteres'
   }
-  else if (!haveUpperCase.test(password)) {
+  else if (!haveUpperCase.match(password)) {
     return 'The password do have min a uppercase'
   }
-  else if (!haveLowerCase.test(password)) {
+  else if (!haveLowerCase.match(password)) {
     return 'The password do have min a lowercase'
   }
-  else if (!haveNumber.test(password)) {
+  else if (!haveNumber.match(password)) {
     return 'The password do have min a number'
   }
-  if (!haveSpecialC.test(password)) {
+  if (!haveSpecialC.match(password)) {
     return 'The password do have min a special character'
   }
 
