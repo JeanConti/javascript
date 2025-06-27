@@ -1,8 +1,9 @@
-let userNameInput = document.getElementById('usernameInput')
-let passwordInput = document.getElementById('passwordInput')
+let userName = document.getElementById('username')
+let password = document.getElementById('password')
 let letter = document.getElementById('letter')
+let capital = document.getElementById('capital')
 let number = document.getElementById('number')
-let length = document.getElementById('length')
+let lenGth = document.getElementById('length')
 
 // Quand l'utilisateur clique sur le input du mot de passe, affiche la boîte de message
 passwordInput.onfocus = () => {document.getElementById('message').style.display = 'block'}
@@ -15,7 +16,7 @@ passwordInput.onkeyup = () => {
 
   // Validation des minuscules 
   let minuculas = /[a-z]/g
-  if (passwordInput.value.match(minuculas)) {
+  if (password.value.match(minuculas)) {
     letter.classList.remove('invalid')
     letter.classList.add('valid')
   } else {
@@ -25,32 +26,32 @@ passwordInput.onkeyup = () => {
 
    // Validation des mayusculea
   let mayusculas = /[A-Z]/g
-  if (passwordInput.value.match(mayusculas)) {
-    letter.classList.remove('invalid')
-    letter.classList.add('valid')
+  if (password.value.match(mayusculas)) {
+    capital.classList.remove('invalid')
+    capital.classList.add('valid')
   } else {
-    letter.classList.remove('valid')
-    letter.classList.add('invalid')
+    capital.classList.remove('valid')
+    capital.classList.add('invalid')
   }
 
   // Validation des nombres
   let numbers = /[0-9]/g
-  if (passwordInput.value.match(numbers)) {
-    letter.classList.remove('invalid')
-    letter.classList.add('valid')
+  if (password.value.match(numbers)) {
+    number.classList.remove('invalid')
+    number.classList.add('valid')
   } else {
-    letter.classList.remove('valid')
-    letter.classList.add('invalid')
+    number.classList.remove('valid')
+    number.classList.add('invalid')
   }
 
   // Valider la longueur
 
-  if (length.value.length >= 8) {
-    letter.classList.remove('invalid')
-    letter.classList.add('valid')
+  if (length.value.length >= 8 && length.value.length <= 16) {
+    lenGth.classList.remove('invalid')
+    lenGth.classList.add('valid')
   } else {
-    letter.classList.remove('valid')
-    letter.classList.add('invalid')
+    lenGth.classList.remove('valid')
+    lenGth.classList.add('invalid')
   }
 
 
