@@ -1,5 +1,5 @@
 body {
-/*   margin: 10px 0px;
+  /*   margin: 10px 0px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -10,35 +10,34 @@ body {
   background-color: rgb(32, 32, 78);
 
   .container {
-
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-      .form {
+
+    .form {
       display: flex;
       justify-content: center;
       flex-direction: column;
 
-        label {
+      label {
         font-size: 1em;
         margin-bottom: 10px;
         color: lightskyblue;
-        }
+      }
 
-        .password-input {
-          position: relative;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: rgb(32, 32, 78);
-          border: 1px solid lightskyblue;
-          border-radius: 5px;
-          width: 250px;
+      .password-input {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(32, 32, 78);
+        border: 1px solid lightskyblue;
+        border-radius: 5px;
+        width: 250px;
 
-          input {
+        input {
           position: relative;
           top: 5px;
           left: -15px;
@@ -51,21 +50,26 @@ body {
           outline: none;
         }
 
-        .toggle-password{
+        .toggle-password {
           position: absolute;
           top: 50%;
           right: 18px;
           transform: translateY(-55%);
           cursor: pointer;
+          color: rgb(211, 217, 221);
+          font-size: 1em;
+        }
 
-          
-            color: rgb(211, 217, 221);
-            font-size: 1em;
-          }
+        .toggle-password span {
+          color: lightskyblue;
+          font-size: 0.9em;
+        }
+
+        p {
+          font-size: 1em;
+          margin-top: 10px;
         }
       }
     }
+  }
 }
-  
-
-
