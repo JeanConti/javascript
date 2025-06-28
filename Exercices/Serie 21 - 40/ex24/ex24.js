@@ -46,7 +46,7 @@ passwordInput.onkeyup = () => {
 
   // Valider la longueur
 
-  if (length.value.length >= 8 && length.value.length <= 16) {
+  if (lengGh.value.length >= 8 && lengGh.value.length <= 16) {
     lenGth.classList.remove('invalid')
     lenGth.classList.add('valid')
   } else {
