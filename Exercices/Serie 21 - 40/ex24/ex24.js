@@ -12,41 +12,41 @@ passwordInput.onfocus = () => {document.getElementById('message').style.display 
 passwordInput.onblur = () => { document.getElementById('message').style.display = 'none' }
 
 // Quand l'utilisateur commence a écrire quelque chose dans l'input du mot de passe
-passwordInput.onkeyup = () => {
+password.onkeyup = () => {
 
   // Validation des minuscules 
   let minuculas = /[a-z]/g
   if (password.value.match(minuculas)) {
-    letter.classList.remove('invalid')
-    letter.classList.add('valid')
+    letter.classList.remove('message-error')
+    letter.classList.add('message-valid')
   } else {
-    letter.classList.remove('valid')
-    letter.classList.add('invalid')
+    letter.classList.remove('message-valid')
+    letter.classList.add('message-error')
   }
 
    // Validation des mayusculea
   let mayusculas = /[A-Z]/g
   if (password.value.match(mayusculas)) {
-    capital.classList.remove('invalid')
-    capital.classList.add('valid')
+    capital.classList.remove('message-error')
+    capital.classList.add('message-valid')
   } else {
     capital.classList.remove('valid')
-    capital.classList.add('invalid')
+    capital.classList.add('message-error')
   }
 
   // Validation des nombres
   let numbers = /[0-9]/g
   if (password.value.match(numbers)) {
-    number.classList.remove('invalid')
-    number.classList.add('valid')
+    number.classList.remove('message-error')
+    number.classList.add('message-valid')
   } else {
-    number.classList.remove('valid')
-    number.classList.add('invalid')
+    number.classList.remove('message-valid')
+    number.classList.add('message-error')
   }
 
   // Valider la longueur
 
-  if (lengGh.value.length >= 8 && lengGh.value.length <= 16) {
+  if (lengGth.value.length >= 8 && lengGth.value.length <= 16) {
     lenGth.classList.remove('invalid')
     lenGth.classList.add('valid')
   } else {
