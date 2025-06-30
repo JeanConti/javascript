@@ -1,86 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  margin: 10px 0px;
-  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #a43894;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  justify-items: center;
-
-  .container {
-
-    background-color: #f1f1f1;
-    width: 420PX;
-    
-    form {
-
-      margin-bottom: 10px;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: baseline;
-      align-items: center;
-
-      label {
-
-        font-weight: bold;
-        margin-bottom: 5px;
-        
-      }
-
-      #username, #password{
-        margin: 10px 10px;
-        width: 60%;
-        border-radius: 2px border none;        
-      }
 
 
-      #password {
-        margin: 10px;
-        width: 198px;
-      }
-
-      button {
-        margin: 10px;
-        width: 98px;
-      }
-    }
+  .password-input-box {
+    position: relative;
+    width: 400px;
+    height: 55px;
   }
 
-  #message {
-    /* display: none;
-    padding: 30px;
-    margin-top: 30px;
-    width: 50%;
-    background-color: #f1f1f1;
-    */
-
-    p {
-      padding: 4px 15px;
-      font-size: 18px;
-    } 
-
-    .valid {
-      color: green;
-    }
-
-    .valid::before {
-      position: relative;
-      left: -35px;
-      content: "&#10004;";
-    }
-
-    .invalid {
-      color: red
-    }
-
-    .valid::before {
-      position: relative;
-      left: -35px;
-      content: "&#10004;";
-    }
-
+  .password-input {
+    width: 60%;
+    height: 20px;
+    background-color: #fff;
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 3.5px;
+    color: #a43894;
   }
-
-  
 }
