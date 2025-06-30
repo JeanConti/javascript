@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #a43894;
+  background-color: #92203f;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -27,23 +27,24 @@ body {
     padding: 5px 10px;
     outline: none;
     border-radius: 3.5px;
-    color: #a43894;
+    color: #d256bf;
+    padding-right: 49px;
   }
 
   .password-input::placeholder{
-    color: #721f66;
+    color: #d256bf;
   }
 
   password-input:focus {
-    box-shadow: 0 0 0 6px #721f66,
+    box-shadow: 0 0 0 2px #d256bf,
                 0 0 0 9px #43d217;
   }
 
   .show-password {
     position: absolute;
-    right: 17px;
-    top: 55%;
-    transform: translateY(-50%);
+    right: 165px;
+    top: 17%;
+    transform: translateY(-30%);
     cursor: pointer;
     color: #92203f;
   }
