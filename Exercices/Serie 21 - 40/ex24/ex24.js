@@ -3,7 +3,7 @@ let password = document.getElementById('password')
 let letter = document.getElementById('letter')
 let capital = document.getElementById('capital')
 let number = document.getElementById('number')
-let lenGth = document.getElementById('length')
+let length = document.getElementById('length')
 
 // Quand l'utilisateur clique sur le input du mot de passe, affiche la boîte de message
 passwordInput.onfocus = () => {document.getElementById('message').style.display = 'block'}
@@ -46,12 +46,12 @@ password.onkeyup = () => {
 
   // Valider la longueur
 
-  if (lengGth.value.length >= 8 && lengGth.value.length <= 16) {
-    lenGth.classList.remove('invalid')
-    lenGth.classList.add('valid')
+  if (password.value.length >= 8 && lengGth.value.length <= 16) {
+    length.classList.remove('invalid')
+    length.classList.add('valid')
   } else {
-    lenGth.classList.remove('valid')
-    lenGth.classList.add('invalid')
+    length.classList.remove('valid')
+    length.classList.add('invalid')
   }
 
 
