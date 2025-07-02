@@ -43,9 +43,44 @@ body {
   .show-password {
     position: absolute;
     right: 165px;
-    top: 17%;
+    top: 13%;
     transform: translateY(-30%);
     cursor: pointer;
     color: #92203f;
   }
+
+  .password-checklist {
+    position: absolute;
+    top: calc(8% + 100%);
+    width: 100%;
+    padding: 20px 30px;
+    background-color: #931c3c;
+    border-radius: 4px;
+
+    h3 {
+        font-size: 15px;
+        color: #3a0715;
+        margin-bottom: 5px;
+        /* text-align: center; */
+      }
+
+      ul {
+        list-style: none;
+
+        .list-item {
+          padding-left: 45px;
+          color: whitesmoke;
+          font-size: 14;
+        }
+
+        .list-item::before {
+          
+        }
+      }
+
+
+
+
+  }
+
 }
